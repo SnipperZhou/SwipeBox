@@ -368,8 +368,9 @@
 						// 	$this.clearTimeout();
 						// 	$this.hideBars();
 						// }
-						$('#swipebox-overlay').remove();
-						return;
+						if($('#swipebox-overlay').css('display') === 'block') {
+							$this.closeSlide();
+						}
 					}
 
 					$( '.touching' ).off( 'touchmove' ).removeClass( 'touching' );
