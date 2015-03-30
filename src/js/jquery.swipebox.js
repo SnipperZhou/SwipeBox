@@ -753,6 +753,8 @@
 
 		plugin.init();
 
+		this.ui = ui;
+
 	};
 
 	$.fn.swipebox = function( options ) {
